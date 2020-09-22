@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tools">
+        <div class="tool-header">
+        <div class="tool active-tool" id="pencil">
+            <div class="tool-img">
+                <img src="NewIcons/Black_Pencil.svg">
+            </div>
+            <div class="tool-options" id="pencil-options"> 
+                <div id="pencil-slider">
+                    <input type="range" min="1" max="30" value="5" id="pencil-size">
+                </div>
+                <div class="pencil-colors">
+                    <div id="red"></div>
+                    <div id="black"></div>
+                    <div id="blue"></div>
+                    <div id="green"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tool" id="eraser">
+            <div class="tool-img">
+                <img src="NewIcons/Eraser.svg">
+            </div>
+            <div class="tool-options" id="eraser-options">
+                <div id="eraser-slider">
+                    <input type="range" min="1" max="30" value="5" id="eraser-size">
+                </div>
+            </div>
+        </div>
+        <div class="tool" id="sticky">
+            <div class="tool-img">
+                <img src="NewIcons/StickyNote.svg">
+            </div>
+        </div>
+        <div class="tool" id="upload">
+            
+            <div class="tool-img">
+                <label for="imageupload">
+                <img src="NewIcons/Photo.svg">
+                </label>
+            </div>
+            <input type="file" id="imageupload" name="imageupload" style=
+            'visibility: hidden;
+            position: absolute;
+            '>
+        </div>
+        <div class="tool" id="download">
+            <div class="tool-img">
+                <img src="NewIcons/Download.svg">
+            </div>
+        </div>
+        <div class="tool" id="undo">
+            <div class="tool-img">
+                <img src="NewIcons/Undo.svg">
+            </div>
+        </div>
+        <div class="tool" id="redo">
+            <div class="tool-img">
+                <img src="NewIcons/Redo.svg">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="drawing-area">
+        <canvas id="canvas"></canvas>
+    </div>
+    <!-- <div class="stickypad">
+        <div class="nav">
+            <div class="close"></div>
+            <div class="minimize"></div>
+        </div>
+        <div class="content">
+            <textarea name="" id="notes" cols="30" rows="10"></textarea>
+        </div>
+    </div> -->
+   
+    <script src="script.js"></script>
+    <script src="toolscript.js"></script>
+    <script src="stickypad.js"></script>
+    <script src="img.js"></script>
+</body>
+</html>
